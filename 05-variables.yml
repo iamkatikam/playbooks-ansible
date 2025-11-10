@@ -1,0 +1,10 @@
+---
+  - name: Ansible variables playbook
+    hosts: local
+    connection: local
+    vars:
+      VAR1: "123"
+    tasks:
+    - name: variable usage
+      ansible.builtin.debug:
+      msg: "varaible value is {{ VAR1 }}"
