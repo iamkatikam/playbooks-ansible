@@ -1,6 +1,6 @@
 ---
   - name: ping the remote server
-    hosts: node
+    hosts: paloalto
 
     tasks:
     - name: ping command
