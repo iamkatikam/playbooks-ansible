@@ -7,4 +7,4 @@
     tasks:
     - name: variable usage
       ansible.builtin.debug:
-      msg: "varaible value is {{ VAR1 }}"
+        msg: "varaible value is {{ VAR1 }}"
