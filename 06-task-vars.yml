@@ -8,6 +8,6 @@
     tasks:
     - name: variable usage
       vars:
-        VAR1: 456
+        VAR1: ABC
       ansible.builtin.debug:
         msg: "VAR1 value is : {{ VAR1 }}"
