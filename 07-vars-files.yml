@@ -1,0 +1,9 @@
+---
+  - name: usage of vars files
+    hosts: local
+    vars_files:
+      - variables.yml
+    tasks:
+    - name: print variables info using vars files
+      ansible.builtin.debug:
+        msg: "Course is : {{ COURSE }} and Trainer is: {{ TRAINER }}"
