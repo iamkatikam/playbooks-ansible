@@ -1,6 +1,7 @@
 ---
   - name: usage of vars files
     hosts: local
+    connection: local
     vars_files:
       - variables.yml
     tasks:
