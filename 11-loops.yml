@@ -5,7 +5,7 @@
     tasks:
     - name: using loops
       ansible.builtin.debug:
-        msg: "Hello, {{ item }}"
+        msg: "Hello, {{ item }}" #item is resered keyword here
       loop:
       - Ramesh
       - Naresh
