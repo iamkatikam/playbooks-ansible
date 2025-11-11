@@ -8,3 +8,6 @@
     - name: variable usage
       ansible.builtin.debug:
         msg: "varaible value is {{ VAR1 }}"
+    - name: variables from inventory file
+      ansible.builtin.debug:
+        msg: "varaibles values are {{ VAR2 }} and {{ VAR3 }}"
