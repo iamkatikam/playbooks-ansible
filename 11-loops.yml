@@ -18,4 +18,4 @@
         state: "{{ item.state }}"
       loop:
       - { name: 'nginx', state: 'present'}
-      - { name: 'zip', state: 'prsent'}
+      - { name: 'zip', state: 'present'}
