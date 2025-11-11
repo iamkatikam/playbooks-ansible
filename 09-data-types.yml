@@ -1,0 +1,21 @@
+---
+  - name: Data type in ansible
+    hosts: local
+    connection: local
+    vars:
+      duration: 120
+      course: AWS
+      is_live: yes
+      tools: # it is a list []
+      - linux
+      - shell
+      - ansible
+      concepts: # it is a dictionary
+        CI: jenkins
+        scripting: python
+        IaC: terraform
+
+    tasks:
+    - name: print data types info
+      ansible.builtin.debug:
+        msg: "duration: {{ duration }}, course: {{ course }}, LIVE: {{ is_live }}, tools: {{ tools }}, concepts: {{ concepts }}"
